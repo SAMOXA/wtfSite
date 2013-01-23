@@ -1,0 +1,154 @@
+/* 
+    Document   : request
+    Created on : 23.12.2012, 0:35:10
+    Author     : Мэйн-Фрейим
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.node-request-scene .field{
+  /*clear: right;
+  clear: left;*/
+}
+
+.content .field-name-field-request-nick{
+  display: table-cell;
+  width: 350px;
+  padding-bottom:  10px;
+}
+
+.content .field-name-field-request-decript{
+  display: table-cell;
+  width: 500px;
+}
+
+.content .field-name-field-request-city{
+  display: table-cell;
+  margin-left: 10px;
+}
+
+.content .field-name-field-request-label{
+  display: inline-block;
+  width: 350px;
+  margin-bottom: 15px;
+}
+
+.content .field-name-field-request-pers-name{
+  display: inline-block;
+  width: 350px;
+  margin-bottom: 15px;
+}
+
+.content .field-name-field-request-fandom{
+  display: inline-block;
+}
+
+.content .field-name-field-request-fio{
+  display: table-cell;
+  width: 350px;
+  padding-bottom: 15px;
+}
+
+.content .field-name-field-request-vk{
+  display: table-cell;
+  width: 500px;
+}
+
+.content .field-name-field-request-phone{
+  display: table-cell;
+}
+
+.node-request-market .content .field-name-field-request-fio{
+  display: inline-block;
+  width: 350px;
+  padding-bottom: 15px;
+}
+
+.node-request-market .content .field-name-field-request-vk{
+  display: inline-block;
+  width: 500px;
+}
+
+.node-request-market .content .field-name-field-request-phone{
+  display: inline-block;
+}
+
+.node-request-defile .field-name-field-request-foto .field-item{
+  display: inline-block;
+  margin-left: 1px;
+}
+
+.node-request-defile .field-name-field-request-foto .field-item img:hover{
+  border: 5px gray solid;
+}
+
+.node-request-defile .field-name-field-request-foto-suit .field-item{
+  display: inline-block;
+  margin-left: 1px;
+}
+
+.node-request-defile .field-name-field-request-foto-suit .field-item img:hover{
+  border: 5px gray solid;
+}
+
+.node-request-defile .field-name-field-request-pers-image .field-item{
+  display: inline-block;
+  margin-left: 1px;
+}
+
+.node-request-defile .field-name-field-request-pers-image .field-item img:hover{
+  border: 5px gray solid;
+}
+
+.node-request-dance .field-name-field-request-dance-foto .field-item{
+  display: inline-block;
+  margin-left: 1px;
+}
+
+.node-request-dance .field-name-field-request-dance-foto .field-item img:hover{
+  border: 5px gray solid;
+}
+
+.node-request-handmade .field-name-field-request-handmade-foto .field-item{
+  display: inline-block;
+  margin-left: 1px;
+}
+
+.node-request-handmade .field-name-field-request-handmade-foto .field-item img:hover{
+  border: 5px gray solid;
+}
+
+.node-request-foto .field-name-field-request-foto-foto .field-item{
+  display: inline-block;
+  margin-left: 1px;
+}
+
+.node-request-foto .field-name-field-request-foto-foto .field-item img:hover{
+  border: 5px gray solid;
+}
+
+.node-request-defile .field-name-field-request-pers-image-none{
+  
+}
+
+.conent-none .field-items{
+  background-color: #FE4F58;
+}
+
+.conent-none .field-items p{
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  color: #502227;
+}
+
+.field-name-field-request-state .field-items{
+  text-align: center;
+}
+
+.field-name-field-request-state .field-items .field-item{
+  display: inline-block;
+  font-size: 25px;
+  font-weight: bold;
+  color: #502227;
+}

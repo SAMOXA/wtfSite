@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the WTF_views feature.
+ */
+
+include_once 'wtf_views.features.inc';

@@ -1,0 +1,10 @@
+name = WTF_page_template
+core = 7.x
+package = Features
+version = 7.x-0.1
+project = wtf_page_template
+dependencies[] = ctools
+dependencies[] = page_manager
+features[ctools][] = page_manager:pages_default:1
+features[features_api][] = api:1
+features[page_manager_handlers][] = site_template_panel_context

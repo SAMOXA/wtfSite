@@ -1,0 +1,67 @@
+/* 
+    Document   : forms
+    Created on : 30.11.2012, 23:24:41
+    Author     : Мэйн-Фрейим
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.form-item-field-request-state-und-0-value{
+  display: none;
+}
+
+.form-item-field-request-reason-und-0-value{
+  display: none;
+}
+
+.node-request_defile-form .field-name-field-request-label{
+  display: none;
+}
+
+.node-request_defile-form .form-item-title{
+  display: none;
+}
+
+.node-request_scene-form .form-item-title{
+  display: none;
+}
+
+.node-request_karaoke-form .form-item-title{
+  display: none;
+}
+
+.node-request_music-form .form-item-title{
+  display: none;
+}
+
+.node-request_dance-form .form-item-title{
+  display: none;
+}
+
+.node-request_amv-form .form-item-title{
+  display: none;  
+}
+
+.node-request_write-form .form-item-title{
+  display: none;  
+} 
+
+.node-request_master-form .form-item-title{
+  display: none;  
+} 
+
+.node-request_handmade-form .form-item-title{
+  display: none;  
+} 
+
+.node-request_foto-form .form-item-title{
+  display: none;  
+} 
+
+.node-to_admin_form-form .form-item-title{
+  display: none;  
+}
+
+.node-request_market-form .form-item-title{
+  display: none;  
+}

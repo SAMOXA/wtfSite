@@ -1,0 +1,3 @@
+name = wtf_module
+description = Модуль для сайта WTFestival
+core = 7.x

@@ -1,0 +1,15 @@
+name = WTF_lk_menu
+core = 7.x
+package = Features
+php = 5.2.4
+version = 7.x-0.2
+project = wtf_lk_menu
+dependencies[] = features
+dependencies[] = menu
+features[features_api][] = api:1
+features[menu_custom][] = menu-lk
+features[menu_links][] = menu-lk:<front>
+features[menu_links][] = menu-lk:lk
+features[menu_links][] = menu-lk:messages
+features[menu_links][] = menu-lk:messages/new
+features[menu_links][] = menu-lk:user/logout

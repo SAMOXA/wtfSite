@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the WTF_page_template feature.
+ */
+
+include_once 'wtf_page_template.features.inc';

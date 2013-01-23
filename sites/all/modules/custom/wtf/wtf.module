@@ -1,0 +1,92 @@
+<?php
+
+/**
+ * @file
+ */
+
+/**
+ * .
+ */
+
+/**
+ * Implements hook_ctools_plugin_api().
+ */
+function wtf_ctools_plugin_api($owner, $api) { 
+  if ($owner == 'panels') {
+    return array('version' => 2.0);
+  }
+}
+
+function wtf_ctools_plugin_directory($owner, $plugin_type) {
+  // we'll be nice and limit scandir() calls
+  if ($owner == 'ctools' && $plugin_type == 'content_types') {
+    return 'plugins/content_types';
+  }
+}
+
+function wtf_menu_alter(&$items){
+  //kpr($items);
+  //die('lol');access arguments
+  $items['rl/%id']['access callback'] = 'wtf_rl_access';
+  $items['rl/%id']['access arguments'] = array(1); 
+}
+
+function wtf_rl_access(){
+  return FALSE;
+  //print (serialize(arg(1)));
+  $s = arg(1);
+  if(!empty($s)){
+    return FALSE;
+  }
+  return FALSE;
+}
+
+function wtf_menu(){
+  $items = array();
+  $items['admin/config/wtf'] = array(
+    'title' => 'Конфигурация сайта',
+    'description' => 'Configure the Tcompactmenu.',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('wtf_config_form'),
+    'access callback' => 'user_access',
+    'access arguments' => array('access administration pages'),
+    'type' => MENU_NORMAL_ITEM,
+  );
+  return $items;
+}
+
+function wtf_init(){
+  //die("");
+}
+
+function wtf_config_form($form, &$form_state){
+  $form['current_posts_max'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Maximum number of posts'),
+    '#default_value' => variable_get('current_posts_max', 3),
+    '#size' => 2,
+    '#maxlength' => 2,
+    '#description' => t('The maximum number of links to display in the block.'),
+    '#required' => TRUE,
+  );
+  $form['request_enable'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('Приём заявок'),
+    '#default_value' => variable_get('request_enable', FALSE),
+    '#size' => 2,
+    '#maxlength' => 2,
+    '#description' => t('Открытие приёма заявок'),
+  );
+  return system_settings_form($form);
+}
+
+function wtf_mail($key, &$message, $params){
+  if($key == 'request'){
+    $message['subject'] = $params['subject'];
+    $message['body'][] = $params['body'];
+  }
+}
+
+function wtf_node_view_alter(&$build){
+  //kpr($build);
+}
